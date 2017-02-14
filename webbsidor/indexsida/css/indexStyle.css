@@ -1,0 +1,168 @@
+body{
+	margin:0 auto;
+}
+
+main{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url("../img/bakgrund.jpg");
+}
+
+header{
+	height: 13%;
+	width: 100%;
+	position: fixed;
+	background-color:grey;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+	z-index: 100;
+}
+
+/*Headerbild*/
+.panorama{
+	width: auto;
+	height: 65%;
+	margin-top: 1%;
+	margin-left: 0.5%;
+}
+
+/*Hem och kontaktknapp*/
+.button
+{
+  margin-top: 2%;
+  margin-right: 2%;
+  float: right;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.button:hover
+{
+text-decoration: underline;
+}
+
+.button:active
+{
+  text-decoration: underline;
+}
+
+.button:visited, .button:link
+{
+  color: black;
+}
+
+.home-icon {
+  width: 20px;
+  height: 14px;
+  right: 6px;
+  display: inline-block;
+  position: relative;
+  border: 7px solid #000;
+  border-bottom: transparent;
+}
+
+.home-icon:after {
+  content: '';
+  position: absolute;
+  border: 12px solid transparent;
+  border-bottom-color: #000;
+  top: -31px;
+  left: -9px;
+  z-index: 1;
+}
+
+.envelope-icon {
+  position: relative;
+  top: 3px;
+  left: -6px;
+  border: 9px solid transparent;
+  border-top-color: #000;
+  display: inline-block;
+}
+.envelope-icon:after {
+  content: '';
+  position: absolute;
+  border: 7.5px solid #000;
+  border-color: transparent #000;
+  left: -11px;
+  top: -8px;
+  width: 22px;
+}
+.envelope-icon:before {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color: #000;
+  top: -13px;
+  left: -10px;
+}
+
+/*Pilknappar*/
+.btnLeft{
+	margin-top: 25%;
+	position: fixed;
+	left:0;
+	z-index: 4;
+}
+
+.btnRight{
+	margin-top: 25%;
+	position:fixed;
+	margin-right: 15px;
+	z-index: 4;
+	right: 0;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right
+{
+	font-size: 65px;
+	margin-left: 14px;
+	margin-top: 12px;
+	color: #000;
+}
+
+/*Config för lådorna.*/
+.col-xs-4{
+	padding: 6%;
+}
+
+.img-responsive {
+	border-radius: 20px;
+}
+
+.container
+{
+	padding: 0;
+	margin-top: 11%;
+	width: 100%;
+}
+
+footer{
+	height: 5%;
+	width: 100%;
+	background-color:grey;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	box-shadow: 0px -5px 5px rgba(0,0,0,0.4);
+}
+
+/*Anpassning för olika skärmar*/
+
+@media screen and (max-width: 1600px) {
+	.btnLeft{
+		margin-top: 22%;
+	}
+
+	.btnRight{
+		margin-top: 22%;
+	}
+
+	.container{
+		margin-top:9%;
+	}
+}
